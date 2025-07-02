@@ -1,0 +1,225 @@
+#video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.container {
+    max-width: 1100px;
+    margin: 160px auto 170px auto; 
+    padding: 0 16px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 48px;
+    color: #FFB900;
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+}
+    
+.perfumes {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: thin; 
+    scrollbar-color: #8c4a18 #f2e8dc; 
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    padding: 16px 16px 16px 16px;
+}
+
+.perfumes::-webkit-scrollbar {
+    height: 8px;
+}
+
+.perfumes::-webkit-scrollbar-track {
+    background-color: #f2e8dc; 
+}
+
+.perfumes::-webkit-scrollbar-thumb {
+    background-color: #1f0e00; 
+    border-radius: 4px;
+}
+
+.perfumes::-webkit-scrollbar-thumb:hover {
+    background-color: #1f0e00;
+}
+
+.perfumes::-webkit-scrollbar-thumb:active {
+    background-color: #1f0e00; 
+}
+
+.perfumes-productos {
+    background: #c5ae91;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #000000;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s ease;
+    min-width: 220px;     
+}
+
+.perfumes-productos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px #000000;
+}
+
+.perfumes-productos img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 32px;
+}
+
+.nombre-producto {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #1f0e00;
+}
+
+.precio {
+    color: #1f0e00;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.btn-producto {
+    background-color: #1f0e00;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-producto:hover {
+    background-color: #8c4a18;
+}
+
+.detalle-producto {
+    display: none;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+.detalle-producto:target {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    visibility: visible;
+    height: auto;
+    max-width: 900px;
+    margin: 125px auto; 
+    padding: 20px;
+    background-color: #c5ae91;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.detalle-producto img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+.imagen-perfume {
+    position: relative;
+    width: fit-content;
+}
+
+.img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imagen-perfume:hover .img-hover {
+    opacity: 1;
+}
+
+.imagen-perfume:hover .img-normal {
+    opacity: 0;
+}
+
+.informacion-producto h2 {
+    font-size: 28px;
+    color: #1f0e00;
+}
+
+.informacion-producto p {
+    font-size: 20px;
+    color: #000000; 
+}
+
+.informacion-producto .precio {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d30303; 
+    margin-bottom: 20px;
+}
+
+.informacion-producto button {
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    background-color: #1f0e00; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;;
+}
+
+.informacion-producto button:hover {
+    background-color: #8c4a18; 
+    transform: scale(1.05);
+}
+
+.informacion-producto a {
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1f0e00; 
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 150px; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.informacion-producto a:hover {
+    background-color: #8c4a18; 
+    transform: scale(1.05);
+}
+
+.btn-volver {
+    position: fixed;
+    top: 20px;     
+    left: 20px;    
+    z-index: 10;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.flecha-icono {
+    width: 60px;      
+    height: 60px;
+    object-fit: contain;
+}
