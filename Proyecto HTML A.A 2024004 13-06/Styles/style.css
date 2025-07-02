@@ -1,0 +1,575 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+img{
+    object-fit: cover;
+}
+
+body{
+    background-image: url(../Images/DegradadoAzul.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    background-color: #000000;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+nav a.logo{
+    font-size: 33px;
+    color: #fffffffa;
+    font-weight: 600;
+}
+
+nav .links a:not(:last-child){
+    margin-right: 20px;
+}
+
+nav .IniciarSesion button{
+    padding: 8px 14px;
+    border: none;
+    margin-right: 14px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+nav .IniciarSesion button.Ingresar{
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 4px;
+    margin-left: 14px;
+}
+
+nav .IniciarSesion button.Registrate {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+nav .IniciarSesion button.Registrate:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+header{
+    padding: 0 100px;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .izquierda{
+    width: 700px;
+}
+
+header .izquierda h1{
+    font-size: 80px;
+}
+
+header .izquierda h1 span{
+    color: #ffffff;
+}
+
+header .izquierda p{
+    font-style: italic;
+    margin: 40px 0;
+    color: #000;
+}
+
+header .izquierda a{
+    display: flex;
+    align-items: center;
+    background: #000;
+    width: 200px;
+    padding: 8px;
+    border-radius: 60px;
+}
+
+header .izquierda a i{
+    background-color: #3a55b1;
+    font-size: 24px;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+header .izquierda a span{
+    color: #f1f1f1;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+header img{
+    width: 550px;
+}
+
+h2.separador{
+    padding: 0 80px;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.planes{
+    padding: 0 80px;
+    margin: 50px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/*Diseno de cajitas blancas para las imagenes y planes*/
+.planes .item,
+.Categorias .lista-nfts .Nft{
+    padding: 20px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,1);
+    transition: all 0.3s ease;
+}
+
+.planes .item:hover,
+.Categorias .lista-nfts .Nft:hover{
+    box-shadow: none;
+}
+
+.planes .item .header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.planes .item .header i{
+    font-size: 40px;
+}
+
+.planes .item .header h5 {
+    font-size: 17px;
+}
+
+.planes .item .p{
+    margin-top: 10px;
+    padding: 0 4px;
+}
+
+.Categorias {
+    padding: 0 80px;
+    margin-top: 30px;
+}
+
+.Categorias .Creador {
+    display: flex;
+    gap: 14px;
+}
+
+.Categorias .Creador a {
+    background-color: #375166;
+    padding: 8px 14px;
+    font-size: 15px;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+}
+
+.Categorias .Creador a:hover {
+    color: #fff;
+    background-color: #2759a3;
+}
+
+.Categorias .lista-nfts {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.Categorias .lista-nfts .Nft img{
+    width: 280px;
+    height: 280px;
+    border-radius: 18px;
+}
+
+.sitios .lista-sitios .lugar{
+    padding: 20px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px  30px rgba(0,0,0,1);
+    transition: all 0.3s ease;
+}
+
+.sitios .lista-sitios .lugar:hover{
+    box-shadow: none;
+}
+
+.Categorias .lista-nfts .Nft .info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-color: 1px solid #edecec;
+}
+
+.Categorias .lista-nfts .Nft .info h5{
+    font-size: 18px;
+}
+
+.Categorias .lista-nfts .Nft .info .sitio{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.Categorias .lista-nfts .Nft .info .sitio i{
+    font-size: 22px;
+    color: rgb(0, 102, 255);
+}
+.ventas{
+    padding: 0 80px;
+    margin: 40px 0 80px;
+    display: flex;
+    gap: 30px;
+}
+
+.ventas .producto{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    gap: 14px;
+    padding: 14px;
+    border-radius: 18px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0,0,0,1);
+    transition: all 0.3 ease;
+}
+
+.ventas .producto img{
+    width: 64px;
+}
+
+.ventas .producto .info{
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h3{
+    font-size: 48px;
+}
+
+footer .derecha{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 26px;
+}
+
+footer .derecha .links{
+    display: flex;
+    gap: 30px;
+}
+
+footer .derecha .links a {
+    color: #af9175;
+    transition: color 0.3s ease;
+}
+
+footer .derecha .links a:hover {
+    color: #ffffff;
+}
+
+footer .derecha .redes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .derecha .redes i{
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+footer .derecha .redes i:hover{
+    color: #af9175;
+}
+
+footer .derecha  p{
+    font-size: 17px;
+    color: #777777;
+}
+
+@media screen and (max-width: 1400px) {
+    nav,
+    header,
+    h2.separador,
+    .sitios,
+    .lugares,
+    .header,
+    .Categorias {
+        padding: 0 40px;
+    }
+
+    header .izquierda a {
+        margin: 0 auto;
+    }
+
+    header .izquierda h1 {
+        font-size: 60px;
+    }
+
+    header img {
+        width: 540px;
+    }
+
+    .sitios .lista-sitios .lugar img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .Categorias .lista-nfts {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .Categorias .lista-nfts .Nft img {
+        width: 240px;
+        height: 240px;
+    }
+
+    footer {
+        padding: 100px 40px;
+    }
+
+    footer h3 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        padding: 0 40px;
+    }
+
+    header {
+        padding: 0 40px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    header .izquierda {
+        width: 100%;
+    }
+
+    header .izquierda h1 {
+        font-size: 48px;
+    }
+
+    header .izquierda p {
+        font-size: 15px;
+    }
+
+    header img {
+        width: 480px;
+        margin-top: 20px;
+    }
+
+    h2.separador {
+        font-size: 34px;
+        padding: 0 40px;
+        text-align: center;
+    }
+
+    .planes {
+        padding: 0 40px;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .planes .item {
+        width: 48%;
+    }
+
+    .sitios {
+        padding: 0 40px;
+    }
+
+    .sitios .lista-sitios {
+        flex-wrap: wrap;
+        row-gap: 30px;
+        justify-content: center;
+    }
+
+    .sitios .lista-sitios .lugar {
+        width: 48%;
+    }
+
+    .sitios .lista-sitios .lugar img {
+        width: 100%;
+        height: auto;
+    }
+
+    .Categorias .lista-nfts {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .Categorias .lista-nfts .Nft {
+        width: 45%;
+    }
+
+    .Categorias .lista-nfts .Nft img {
+        width: 100%;
+        height: auto;
+    }
+
+    .ventas {
+        padding: 0 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .ventas .producto {
+        width: 48%;
+    }
+
+    footer {
+        padding: 100px 40px;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    footer h3 {
+        font-size: 34px;
+    }
+
+    footer .derecha {
+        width: 100%;
+        align-items: center;
+    }
+
+    footer .derecha .links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .derecha .redes {
+        justify-content: center;
+    }
+
+    footer .derecha p {
+        font-size: 15px;
+    }
+
+    footer .links a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav .links,
+    nav .IniciarSesion {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    header img {
+        width: 100%;
+        max-width: 350px;
+        margin-top: 20px;
+    }
+
+    header .izquierda {
+        width: 100%;
+    }
+
+    .planes,
+    .ventas,
+    .sitios .lista-sitios,
+    .Categorias .lista-nfts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .planes .item,
+    .ventas .producto,
+    .sitios .lista-sitios .lugar,
+    .Categorias .lista-nfts .Nft {
+        width: 90%;
+    }
+
+    .sitios .lugares {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    footer h3 {
+        font-size: 28px;
+    }
+
+    footer .derecha {
+        align-items: center;
+    }
+
+    footer .derecha .links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .derecha .redes {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+img {
+    object-fit: cover;
+}
+
+
+body {
+    background-image: url(../Images/DegradadoAzul.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* barra principal de navegacion */
+nav {
+    background-color: #000000;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+nav a.logo {
+    font-size: 33px;
+    color: #fffffffa;
+    font-weight: 600;
+}
+
+nav .links a:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 80px);
+    padding: 0 24px;
+}
+
+/* Tarjeta de registro */
+.Registro-Card {
+    width: 100%;
+    max-width: 500px;
+    padding: 50px 40px;
+    border-radius: 1.25rem;
+    background: rgba(255, 255, 255, 0.7);
+    color: #000;
+    text-align: center;
+}
+
+
+.Registro-Card h2,
+.Registro-Card h3 {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+
+.registro-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 4px;
+}
+
+
+.registro-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registro-form button:hover {
+    background-color: #0056b3;
+}
